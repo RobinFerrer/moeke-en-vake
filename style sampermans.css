@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+header,
+footer,
+main {
+    background-color: whitesmoke;
+    color: whitesmoke;
+    padding: 25px 50px 25px 50px;
+}
+
+header {
+    grid-area: header;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    background-image: url("DSC_0012.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    grid-area: footer;
+}
+
+h3 {
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: cadetblue;
+    padding: 10px 0 20px 0;
+}
+
+button {
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-variant-caps: all-small-caps;
+    color: cadetblue;
+    padding: 10px 0;
+}
+
+

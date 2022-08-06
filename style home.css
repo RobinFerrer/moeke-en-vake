@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px 1fr 75px;
+}
+
+header,
+footer,
+main {
+    background-color: lightsteelblue;
+    color: whitesmoke;
+    padding: 25px 50px 25px 50px;
+}
+
+header {
+    grid-area: header;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    background-image: url("Moeke en Vake.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: lightsteelblue;
+    padding: 100px 30px 100px 30px;
+} 
+
+footer {
+    grid-area: footer;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h3 {
+    letter-spacing: 1px;
+    align-items: center;
+
+}
+
+.quote_antwerpen {
+    text-align: center;
+    color: teal;
+    font-size: 30px;
+    padding: 200px 0 0 0;
+}
+
+.quote_gent {
+    text-align: center;
+    color: teal;
+    font-size: 30px;
+    padding: 0;
+}
+
+.quotes {
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+    padding: 100px 15px;
+
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: teal;
+}
+
+button {
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-variant-caps: all-small-caps;
+    color: cadetblue;
+}
+
+
+
+
+
